@@ -1,4 +1,4 @@
-{
+ {
   "manifest_version": 2,
 
   "name": "Nick's Button",
@@ -12,4 +12,18 @@
   "permissions": [
    "activeTab"
    ]
+}
+{
+  "manifest_version": 2,
+ 
+  "name": "Modify CSS and HTML",
+  "version": "0.1.0",
+  "description": "Lateral blog post demo extension",
+ 
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["<all_urls>"]
+  }]
+ 
 }
